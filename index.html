@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encriptador de Texto</title>
+</head>
+<img class="logo" src="./img/ecnriptexr.png" alt="logo_encriptador"> 
+<body>
+    <main>
+
+        <section class="contenedor">
+
+        <div class="div_accion">
+            <textarea name="ingreso_texto" id="ingreso_texto">ingrese el texto aqui</textarea>
+            <p>Solo letras minusculas y sin acentos</p>
+            <button href="#" class="encriptar" onclick="encriptarTexto()">Encriptar</button>
+            <button href="#" class="desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+        </div>
+
+        <div class="div_no_mensaje" id="div_no_mensaje">
+            <img class="perrito_img" src="./img/Perrito.png" alt="visualizacion sin mensaje encriptado">
+            <p>Ningún mensaje fue encontrado</p>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <div class="div_copiar" id="div_mensaje_encriptado" style="display: none;">
+            <p id="mensaje_encriptado">Mensaje encriptado:</p>
+            <button href="#" class="copiar" onclick="copiarTexto()">Copiar</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Jose Picon</p>
+    </footer>
+    <script src="encriptador.js"></script>
+</body>
+</html>
